@@ -1,0 +1,19 @@
+<!-- templates/base.html -->
+{% extends base.html%}
+<!DOCTYPE html> 
+<html lang="ru">          
+  <head>       
+  </head>
+  <body>       
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+        <h1> {% block content%} Список {% endblock%}</h1>
+    </main>
+    <footer>
+      {% include 'includes/footer.html' %} 
+    </footer>
+  </body>
+</html>
+
